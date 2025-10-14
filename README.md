@@ -316,6 +316,52 @@ Ensures sensitive information is not exposed in API error messages and helps det
 
 **Compliance:** Aligns with best practices for privacy, authentication, and data security standards.
 
+## 🔁 CI/CD Pipeline
+
+### ⚙️ What is CI/CD?
+
+CI/CD (Continuous Integration and Continuous Deployment) is a software development practice that automates the process of integrating code changes, testing them, and deploying them to production environments. It ensures that new features and bug fixes are delivered quickly, consistently, and with minimal errors.
+
+#### - Continuous Integration (CI):
+Automatically tests and merges new code into the main branch to detect and fix issues early.
+
+#### - Continuous Deployment (CD):
+Automates the delivery of tested code to production or staging environments, ensuring fast and reliable updates.
+
+### 🚀 Importance for This Project
+
+Implementing a CI/CD pipeline in the Airbnb Clone Project helps maintain code quality, streamline collaboration, and reduce deployment risks.
+It enables:
+
+Faster development cycles through automation of builds, tests, and deployments.
+
+Early bug detection, preventing integration issues.
+
+Consistent environments, reducing “it works on my machine” problems.
+
+Improved collaboration, as all team members push and test code under the same automated process.
+
+### 🧰 Tools and Technologies Used
+
+| **Tool** | **Purpose** |
+|----------|-------------|
+| **GitHub Actions**	| Automates CI/CD workflows, such as testing and deploying code on every push or pull request. |
+| **Docker**	| Provides consistent containerized environments for development, testing, and deployment. |
+| **MySQL**	| Ensures a reliable and standardized database configuration across environments. |
+| **Django**	| Works seamlessly within the CI/CD process for backend builds and testing. |
+
+### 🧩 Example Workflow
+
+A developer pushes new code to GitHub.
+
+GitHub Actions automatically runs tests and checks code quality.
+
+If tests pass, the code is built into a Docker container.
+
+The container is deployed to a staging or production environment.
+
+This automated flow ensures that every update is stable, secure, and production-ready.
+
 ## 🧪 **Project Setup**
 1. Clone the repository:
    ```bash
