@@ -113,52 +113,78 @@ The Airbnb Clone Project uses a relational database structure designed to manage
 
 ### 🧱 Key Entities and Their Fields
 **1. Users**
+
 Represents the people who use the platform, either as guests or hosts.
 **Fields:**
 
 **id** — Primary key, unique identifier for each user
+
 **name** — Full name of the user
+
 **email** — Unique email address used for authentication
+
 **password_hash** — Encrypted password for security
+
 **role** — Defines whether the user is a guest or host
 
 **2. Properties**
+
 Represents the accommodations listed by hosts on the platform.
 **Fields:**
 
 **id** — Primary key, unique identifier for each property
+
 **title** — Name or short description of the property
+
 **description** — Detailed information about the property
+
 **price_per_night** — Cost of staying per night
+
 **host_id** — Foreign key linking to the Users table (host)
 
 **3. Bookings**
+
 Tracks reservations made by guests for specific properties.
 **Fields:**
+
 **id** — Primary key, unique booking identifier
+
 **user_id** — Foreign key referencing the guest (from Users)
+
 **property_id** — Foreign key referencing the booked property
+
 **check_in_date** — Start date of the booking
+
 **check_out_date** — End date of the booking
 
 **4. Reviews**
+
 Stores user feedback and ratings for properties after their stay.
 **Fields:**
 
 **id** — Primary key, unique identifier for each review
+
 **user_id** — Foreign key referencing the reviewer (from Users)
+
 **property_id** — Foreign key referencing the reviewed property
+
 **rating** — Numeric value (e.g., 1–5)
+
 **comment** — Text feedback about the stay
 
 **5. Payments**
+
 Manages transaction details for confirmed bookings.
 **Fields:**
 
 **id** — Primary key, unique payment identifier
+
 **booking_id** — Foreign key referencing the booking
+
 **amount** — Total amount paid
+
 **payment_method** — e.g., credit card, PayPal, etc.
+
 **status** — Payment status (e.g., Pending, Completed, Failed)
 
 ### 🔗 Entity Relationships
@@ -172,9 +198,13 @@ Each Booking can have one Payment record, ensuring transaction traceability.
 **Entity Relationship Summary:**
 
 User (Host) 1 --- N Property
+
 User (Guest) 1 --- N Booking
+
 Property 1 --- N Booking
+
 Property 1 --- N Review
+
 Booking 1 --- 1 Payment
 
 ### 💡 **Example Use Case**
