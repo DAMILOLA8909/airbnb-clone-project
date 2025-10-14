@@ -108,6 +108,8 @@ Each component follows a **mobile-first approach**, ensuring the interface works
 - **Headings:** Circular, Bold (700), 24px–32px  
 - **Secondary Text:** Circular, Book (400), 14px  
 
+---
+
 ## 🗄️ Database Design
 
 The Airbnb Clone Project uses a relational database structure designed to manage users, property listings, bookings, reviews, and payments efficiently. The schema ensures data consistency and reflects real-world relationships between entities.
@@ -223,6 +225,8 @@ Booking 1 --- 1 Payment
 A guest (User) books a property (Property) listed by a host (User).
 After completing the stay, the guest can leave a review (Review), and the system records a payment (Payment) for the booking.
 
+---
+
 ## ⚙️ Feature Breakdown
 
 The Airbnb Clone Project replicates the essential functionalities of a real-world accommodation booking platform. Each feature is designed to enhance user experience, ensure data consistency, and support a smooth end-to-end booking process.
@@ -258,6 +262,8 @@ Implements user authentication, password hashing, and input validation to protec
 🚀 8. **CI/CD and Deployment Pipeline**
 
 The project uses GitHub Actions and Docker to automate testing, integration, and deployment. This ensures that new updates are delivered efficiently while maintaining system stability across environments.
+
+---
 
 ## 🔒 API Security
 
@@ -316,6 +322,8 @@ Ensures sensitive information is not exposed in API error messages and helps det
 
 **Compliance:** Aligns with best practices for privacy, authentication, and data security standards.
 
+---
+
 ## 🔁 CI/CD Pipeline
 
 ### ⚙️ What is CI/CD?
@@ -362,6 +370,8 @@ The container is deployed to a staging or production environment.
 
 This automated flow ensures that every update is stable, secure, and production-ready.
 
+---
+
 ## 🧪 **Project Setup**
 1. Clone the repository:
    ```bash
@@ -372,6 +382,8 @@ This automated flow ensures that every update is stable, secure, and production-
 
 3. Install dependencies (to be added later when project setup is complete):
    npm install
+
+---
 
 ## 📜 License
 
