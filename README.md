@@ -57,6 +57,56 @@ By completing this project, team members will:
 
 ---
 
+## 🧩 **UI Component Patterns**
+This section describes the reusable UI components that will be developed to ensure design consistency and scalability across the application.
+
+### 🧭 Navbar
+- Displays the **logo**, **search bar**, and **user navigation menu**.  
+- Adapts to different screen sizes with a responsive design.  
+- Provides quick access to login, sign-up, and profile sections.
+
+### 🏘️ Property Card
+- Displays essential information about each property listing, including:  
+  - Property image  
+  - Location  
+  - Price per night  
+  - Rating and reviews  
+- Includes a **“favorite”** or **“save”** button.  
+- Built as a reusable component for both listing and recommendation views.
+
+### 🧾 Listing Details View
+- Shows complete details about a selected property.  
+- Includes image gallery, amenities, booking form, and host information.  
+- Designed for readability and responsiveness.
+
+### 💳 Checkout Component
+- Provides a **simple, secure booking flow**.  
+- Includes form validation for user details and payment information.  
+- Displays booking summary and confirmation message.
+
+### ⚙️ Footer
+- Contains links to key pages (About, Help, Contact).  
+- Displays company information and social media links.  
+- Designed with accessibility and responsive layout in mind.
+
+### 📱 Responsiveness
+Each component follows a **mobile-first approach**, ensuring the interface works seamlessly across all devices (desktop, tablet, and mobile).
+
+---
+
+## 🎨 **Design System**
+### **Color Styles**
+- **Primary:** `#FF5A5F`  
+- **Secondary:** `#008489`  
+- **Background:** `#FFFFFF`  
+- **Text:** `#222222`  
+- **Secondary Text:** `#717171`
+
+### **Typography**
+- **Primary Font:** Circular, Medium (500), 16px  
+- **Headings:** Circular, Bold (700), 24px–32px  
+- **Secondary Text:** Circular, Book (400), 14px  
+
 ## 🧪 **Project Setup**
 1. Clone the repository:
    ```bash
