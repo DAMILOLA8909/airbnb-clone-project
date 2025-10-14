@@ -17,7 +17,7 @@ This project aims to replicate key features of the platform — from browsing pr
 
 ---
 
-## 🧰 **Tech Stack**
+## 🧰 **Technology Stack**
 ### Frontend:
 - **HTML**, **CSS**, **JavaScript**
 - **React** (or a similar modern JS framework)
@@ -106,6 +106,109 @@ Each component follows a **mobile-first approach**, ensuring the interface works
 - **Primary Font:** Circular, Medium (500), 16px  
 - **Headings:** Circular, Bold (700), 24px–32px  
 - **Secondary Text:** Circular, Book (400), 14px  
+
+## 🗄️ Database Design
+
+The Airbnb Clone Project uses a relational database structure designed to manage users, property listings, bookings, reviews, and payments efficiently. The schema ensures data consistency and reflects real-world relationships between entities.
+
+### 🧱 Key Entities and Their Fields
+**1. Users**
+Represents the people who use the platform, either as guests or hosts.
+**Fields:**
+
+**id** — Primary key, unique identifier for each user
+**name** — Full name of the user
+**email** — Unique email address used for authentication
+**password_hash** — Encrypted password for security
+**role** — Defines whether the user is a guest or host
+
+**2. Properties**
+Represents the accommodations listed by hosts on the platform.
+**Fields:**
+
+**id** — Primary key, unique identifier for each property
+**title** — Name or short description of the property
+**description** — Detailed information about the property
+**price_per_night** — Cost of staying per night
+**host_id** — Foreign key linking to the Users table (host)
+
+**3. Bookings**
+Tracks reservations made by guests for specific properties.
+**Fields:**
+**id** — Primary key, unique booking identifier
+**user_id** — Foreign key referencing the guest (from Users)
+**property_id** — Foreign key referencing the booked property
+**check_in_date** — Start date of the booking
+**check_out_date** — End date of the booking
+
+**4. Reviews**
+Stores user feedback and ratings for properties after their stay.
+**Fields:**
+
+**id** — Primary key, unique identifier for each review
+**user_id** — Foreign key referencing the reviewer (from Users)
+**property_id** — Foreign key referencing the reviewed property
+**rating** — Numeric value (e.g., 1–5)
+**comment** — Text feedback about the stay
+
+**5. Payments**
+Manages transaction details for confirmed bookings.
+**Fields:**
+
+**id** — Primary key, unique payment identifier
+**booking_id** — Foreign key referencing the booking
+**amount** — Total amount paid
+**payment_method** — e.g., credit card, PayPal, etc.
+**status** — Payment status (e.g., Pending, Completed, Failed)
+
+### 🔗 Entity Relationships
+
+A User (host) can list multiple Properties.
+A User (guest) can make multiple Bookings.
+A Booking belongs to one Property and one User (guest).
+A Property can have many Reviews, and each Review is written by one User.
+Each Booking can have one Payment record, ensuring transaction traceability.
+
+**Entity Relationship Summary:**
+
+User (Host) 1 --- N Property
+User (Guest) 1 --- N Booking
+Property 1 --- N Booking
+Property 1 --- N Review
+Booking 1 --- 1 Payment
+
+### 💡 **Example Use Case**
+A guest (User) books a property (Property) listed by a host (User).
+After completing the stay, the guest can leave a review (Review), and the system records a payment (Payment) for the booking.
+
+## ⚙️ Feature Breakdown
+
+The Airbnb Clone Project replicates the essential functionalities of a real-world accommodation booking platform. Each feature is designed to enhance user experience, ensure data consistency, and support a smooth end-to-end booking process.
+
+🧑‍💻 1. **User Management**
+This feature allows users to register, log in, and manage their profiles securely. It supports two primary roles — hosts (who list properties) and guests (who make bookings). Secure authentication and role-based access control ensure data privacy and proper user permissions.
+
+🏠 2. **Property Management**
+Hosts can list, update, or delete their properties, including uploading images, setting prices, and adding descriptions. This feature ensures that each property listing is detailed and easily searchable, helping guests find suitable accommodations quickly.
+
+📅 3. **Booking System**
+Guests can search for available properties, view details, and make bookings for specific dates. The system prevents double bookings and maintains accurate check-in/check-out records, ensuring a smooth reservation experience for all users.
+
+💳 4. **Payment Integration**
+
+The project includes a secure payment processing system that allows guests to pay for bookings through various methods (e.g., credit card, PayPal). Payment status tracking ensures that both guests and hosts have transparent and reliable transaction records.
+
+⭐ 5. **Review and Rating System**
+After a completed stay, guests can leave reviews and ratings for properties. This feedback system promotes trust and transparency, helping future guests make informed decisions and encouraging hosts to maintain high-quality listings.
+
+🔍 6. **Search and Filtering**
+Users can filter properties based on location, price range, amenities, or ratings. This feature improves navigation and helps users find accommodations that best match their preferences and budgets.
+
+🛡️ 7. **Security and Authentication**
+Implements user authentication, password hashing, and input validation to protect user data. Security protocols ensure that all user interactions and transactions occur in a safe environment.
+
+🚀 8. **CI/CD and Deployment Pipeline**
+The project uses GitHub Actions and Docker to automate testing, integration, and deployment. This ensures that new updates are delivered efficiently while maintaining system stability across environments.
 
 ## 🧪 **Project Setup**
 1. Clone the repository:
