@@ -259,6 +259,63 @@ Implements user authentication, password hashing, and input validation to protec
 
 The project uses GitHub Actions and Docker to automate testing, integration, and deployment. This ensures that new updates are delivered efficiently while maintaining system stability across environments.
 
+## 🔒 API Security
+
+Security is a core component of the Airbnb Clone Project, ensuring that all user data, transactions, and communications remain confidential and tamper-proof. The project applies multiple layers of security across authentication, authorization, and data protection to safeguard both hosts and guests.
+
+### 🧩 Key Security Measures
+1. Authentication
+
+Implements secure user login and identity verification using JWT (JSON Web Tokens) or session-based authentication.
+Why it matters:
+Prevents unauthorized access and ensures that only verified users can perform actions such as booking properties, adding listings, or leaving reviews.
+
+2. Authorization
+
+Controls user permissions based on roles (e.g., host, guest, admin).
+Why it matters:
+Ensures that users can only access resources or perform actions relevant to their roles — for example, guests can book properties but cannot modify property listings owned by other users.
+
+3. Input Validation and Sanitization
+
+Validates and sanitizes all user inputs before processing.
+Why it matters:
+Protects the system from common vulnerabilities such as SQL injection, XSS (Cross-Site Scripting), and data corruption caused by malicious input.
+
+4. Data Encryption
+
+All sensitive data (like passwords and payment information) is encrypted using industry-standard hashing algorithms (e.g., bcrypt, SHA-256).
+Why it matters:
+Keeps user credentials and financial details secure, even in the event of a database breach.
+
+5. Rate Limiting
+
+Restricts the number of API requests a client can make in a given time frame.
+Why it matters:
+Prevents abuse of the system (e.g., brute-force login attempts, denial-of-service attacks) and ensures stable performance for all users.
+
+6. HTTPS and Secure Communication
+
+All client-server communications occur over HTTPS, ensuring data is encrypted in transit.
+Why it matters:
+Prevents man-in-the-middle attacks and data interception during communication between users and the server.
+
+7. Error Handling and Logging
+
+Implements safe error responses and activity logging for debugging and security monitoring.
+Why it matters:
+Ensures sensitive information is not exposed in API error messages and helps detect suspicious activity in real time.
+
+### 🛡️ Importance of Security Across the Project
+
+**User Data Protection:** Safeguards personal information such as emails, passwords, and contact details.
+
+**Secure Payments:** Prevents fraudulent transactions and ensures trust between guests and hosts.
+
+**System Integrity:** Protects the platform from malicious users and preserves the reliability of all services.
+
+**Compliance:** Aligns with best practices for privacy, authentication, and data security standards.
+
 ## 🧪 **Project Setup**
 1. Clone the repository:
    ```bash
