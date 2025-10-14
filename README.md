@@ -227,35 +227,35 @@ After completing the stay, the guest can leave a review (Review), and the system
 
 The Airbnb Clone Project replicates the essential functionalities of a real-world accommodation booking platform. Each feature is designed to enhance user experience, ensure data consistency, and support a smooth end-to-end booking process.
 
-### 🧑‍💻 1. **User Management**
+🧑‍💻 1. **User Management**
 
 This feature allows users to register, log in, and manage their profiles securely. It supports two primary roles — hosts (who list properties) and guests (who make bookings). Secure authentication and role-based access control ensure data privacy and proper user permissions.
 
-### 🏠 2. **Property Management**
+🏠 2. **Property Management**
 
 Hosts can list, update, or delete their properties, including uploading images, setting prices, and adding descriptions. This feature ensures that each property listing is detailed and easily searchable, helping guests find suitable accommodations quickly.
 
-### 📅 3. **Booking System**
+📅 3. **Booking System**
 
 Guests can search for available properties, view details, and make bookings for specific dates. The system prevents double bookings and maintains accurate check-in/check-out records, ensuring a smooth reservation experience for all users.
 
-### 💳 4. **Payment Integration**
+💳 4. **Payment Integration**
 
 The project includes a secure payment processing system that allows guests to pay for bookings through various methods (e.g., credit card, PayPal). Payment status tracking ensures that both guests and hosts have transparent and reliable transaction records.
 
-### ⭐ 5. **Review and Rating System**
+⭐ 5. **Review and Rating System**
 
 After a completed stay, guests can leave reviews and ratings for properties. This feedback system promotes trust and transparency, helping future guests make informed decisions and encouraging hosts to maintain high-quality listings.
 
-### 🔍 6. **Search and Filtering**
+🔍 6. **Search and Filtering**
 
 Users can filter properties based on location, price range, amenities, or ratings. This feature improves navigation and helps users find accommodations that best match their preferences and budgets.
 
-### 🛡️ 7. **Security and Authentication**
+🛡️ 7. **Security and Authentication**
 
 Implements user authentication, password hashing, and input validation to protect user data. Security protocols ensure that all user interactions and transactions occur in a safe environment.
 
-### 🚀 8. **CI/CD and Deployment Pipeline**
+🚀 8. **CI/CD and Deployment Pipeline**
 
 The project uses GitHub Actions and Docker to automate testing, integration, and deployment. This ensures that new updates are delivered efficiently while maintaining system stability across environments.
 
