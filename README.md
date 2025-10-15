@@ -10,12 +10,20 @@ This project aims to replicate key features of the platform — from browsing pr
 
 ## 🎯 **Project Goals**
 
+### Front-End Development
 - Build a responsive and user-friendly booking interface.  
 - Design and implement scalable backend APIs.  
 - Integrate frontend and backend seamlessly.  
 - Practice effective collaboration using Git and GitHub.  
 - Apply best practices in software development, testing, and documentation.
 
+### Back-End Development
+- Build a scalable and secure full-stack booking platform.
+- Strengthen collaboration and version control skills using GitHub.
+- Understand the integration of backend frameworks, databases, and APIs.
+- Implement CI/CD pipelines for automated testing and deployment.
+
+Gain practical experience with software architecture and documentation.
 ---
 
 ## 🧰 **Technology Stack**
@@ -35,6 +43,15 @@ This project aims to replicate key features of the platform — from browsing pr
 ### Design:
 - **Figma** for UI/UX planning
 
+| **Layer** |	**Technology**	| **Description** |
+|-----------|-----------------|-----------------|
+| **Backend Framework** |	Django |	For handling business logic and backend development |
+| **Database**	| MySQL | For relational data storage and management |
+| **API** |	GraphQL	| For flexible and efficient client-server data exchange |
+| **Containerization**	| Docker | For consistent development and deployment environments |
+| **CI/CD** |	GitHub Actions	| For automated integration and deployment pipelines |
+| **Version Control**	| Git & GitHub |	For collaborative project management and tracking |
+
 ---
 
 ## 👥 **Team Roles**
@@ -46,6 +63,22 @@ This project aims to replicate key features of the platform — from browsing pr
 | **Designers** | Develop UI mockups and maintain design consistency |
 | **QA/Testers** | Write and execute test cases |
 | **DevOps Engineers** | Handle deployment and CI/CD setup |
+| **Product Owner** | Defines requirements, prioritizes features, represents stakeholders |
+| **Scrum Master** | Facilitates agile processes, removes blockers, organizes meetings |
+
+---
+
+## 👥 **Project Roles and Responsibilities**
+| Role | Responsibilities |
+|------|------------------|
+| **Project Manager** | Oversees project timeline and deliverables |
+| **Frontend Developers** | Build UI components and ensure responsiveness |
+| **Backend Developers** | Create and manage APIs and database logic |
+| **Designers** | Develop UI mockups and maintain design consistency |
+| **QA/Testers** | Write and execute test cases |
+| **DevOps Engineers** | Handle deployment and CI/CD setup |
+| **Product Owner** | Defines requirements, prioritizes features, represents stakeholders |
+| **Scrum Master** | Facilitates agile processes, removes blockers, organizes meetings |
 
 ---
 
@@ -92,6 +125,50 @@ This section describes the reusable UI components that will be developed to ensu
 
 ### 📱 Responsiveness
 Each component follows a **mobile-first approach**, ensuring the interface works seamlessly across all devices (desktop, tablet, and mobile).
+
+---
+
+## 🎨 **UI/UX Design Planning**
+
+### 🧭 **Design Goals**
+The main goal of the UI/UX design is to create an intuitive, visually appealing, and responsive interface that mirrors the seamless experience users expect from platforms like Airbnb. The design should prioritize clarity, simplicity, and user trust throughout the browsing and booking process.
+
+**Key Design Objectives:**
+- **Create an intuitive booking flow** that minimizes user effort.  
+- **Maintain visual consistency** across all pages using a shared design system (colors, typography, and components).  
+- **Ensure fast loading times** for better user retention.  
+- **Prioritize mobile responsiveness** to cater to users across all devices.  
+- **Enhance accessibility** by following WCAG guidelines.  
+
+
+### ✨ **Key Features**
+| Feature | Description |
+|----------|--------------|
+| **Property Search and Filtering** | Users can search properties by location, price, and other preferences. |
+| **Detailed Property Viewing** | Each property has a dedicated page with images, details, and reviews. |
+| **Secure Checkout Process** | A smooth and safe checkout system for completing bookings. |
+| **User Authentication** | Enables users to sign up, log in, and manage their bookings. |
+| **Favorites and Wishlists** | Users can save preferred properties for future reference. |
+
+
+### 📄 **Primary Pages Overview**
+| **Page** | **Description** |
+|-----------|-----------------|
+| **Property Listing View** | Displays all available properties in a grid layout with filters for location, price, and amenities. Each property card includes an image, price, and short description. |
+| **Listing Detailed View** | Provides complete information about a selected property, including photos, amenities, pricing, and host details. It includes a “Book Now” button and a booking form. |
+| **Simple Checkout View** | Guides users through the final booking steps with minimal friction. Displays booking summary, payment form, and confirmation message upon successful booking. |
+
+
+### 💡 **Importance of a User-Friendly Design**
+A user-friendly design is critical for any online booking system because it directly impacts user satisfaction, trust, and conversion rates.  
+
+A well-structured, intuitive interface:
+- **Reduces friction** in the user journey, making it easier for users to find and book properties.  
+- **Builds confidence** by presenting clear navigation and transparent pricing.  
+- **Improves accessibility**, ensuring that all users—including those with disabilities—can complete bookings effortlessly.  
+- **Encourages repeat visits** by creating a positive and memorable experience.  
+
+In essence, a thoughtful, responsive, and user-centered design not only enhances usability but also drives engagement and customer loyalty.
 
 ---
 
