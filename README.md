@@ -10,20 +10,22 @@ This project aims to replicate key features of the platform — from browsing pr
 
 ## 🎯 **Project Goals**
 
-### Front-End Development
+### Back-End Development
 - Build a responsive and user-friendly booking interface.  
 - Design and implement scalable backend APIs.  
 - Integrate frontend and backend seamlessly.  
-- Practice effective collaboration using Git and GitHub.  
-- Apply best practices in software development, testing, and documentation.
-
-### Back-End Development
-- Build a scalable and secure full-stack booking platform.
+- Practice effective collaboration using Git and GitHub.
 - Strengthen collaboration and version control skills using GitHub.
 - Understand the integration of backend frameworks, databases, and APIs.
 - Implement CI/CD pipelines for automated testing and deployment.
+- Apply best practices in software development, testing, and documentation.
 
-Gain practical experience with software architecture and documentation.
+### Front-End Development
+- Create an intuitive booking flow.
+- Maintain visual consistency.
+- Ensure fast loading times.
+- Prioritize mobile responsiveness.
+
 ---
 
 ## 🧰 **Technology Stack**
